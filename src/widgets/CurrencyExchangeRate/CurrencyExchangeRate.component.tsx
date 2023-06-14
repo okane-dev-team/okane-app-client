@@ -1,5 +1,5 @@
 import { ReactElement } from 'react';
-import { Loader } from '@/components';
+import { Error, Loader } from '@/components';
 import { CurrencyExchangeType, useCurrencyExchageRate } from './';
 import { HStack, Stack, Text } from '@chakra-ui/react';
 
@@ -12,7 +12,7 @@ export const CurrencyExchangeRate = (props: CurrencyExchangeRateProps) => {
   const { cc, rate } = props;
 
   return (
-    <HStack p={4} boxShadow="0px 0px 1px 0px #999" key={cc}>
+    <HStack p={4} boxShadow="0px 0px 1px 0px #999">
       <Text fontWeight="bold">{cc}</Text>
       <Text>{rate}</Text>
     </HStack>
@@ -23,18 +23,22 @@ export const CurrencyExchangeRateList = () => {
   const { isLoading, isError, currencyExchangeData, error } =
     useCurrencyExchageRate();
 
-  console.log({ isLoading, isError, currencyExchangeData, error });
-
   if (isLoading) {
     return <Loader />;
   }
 
-  console.log({ currencyExchangeData });
+  if (isError) {
+    return <Error error={error} />;
+  }
 
   const renderEchangeRateList = (
     currency: CurrencyExchangeType
   ): ReactElement => (
-    <CurrencyExchangeRate cc={currency.cc} rate={currency.rate} />
+    <CurrencyExchangeRate
+      key={currency.cc}
+      cc={currency.cc}
+      rate={currency.rate}
+    />
   );
 
   return <Stack>{currencyExchangeData.map(renderEchangeRateList)}</Stack>;

@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { EXCHANGE_RATE_NBU_API } from '@/constants';
 import { useQuery } from '@tanstack/react-query';
 import { convertEchangeRateObject, sortByGivenOrder } from './';
 
@@ -7,7 +6,7 @@ export const currencyOrder = ['USD', 'EUR', 'DKK'];
 
 export const useCurrencyExchageRate = () => {
   const getNbuExchangeRate = () => {
-    const response = axios.get(EXCHANGE_RATE_NBU_API);
+    const response = axios.get('EXCHANGE_RATE_NBU_API');
 
     return response;
   };
