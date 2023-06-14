@@ -1,0 +1,1 @@
+export { EXCHANGE_RATE_NBU_API } from "./api.constants";
