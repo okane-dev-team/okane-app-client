@@ -1,8 +1,8 @@
-import { Box } from "@chakra-ui/react";
+import { Box } from '@chakra-ui/react';
 
 export const generateDummyListComponent = (
   Component: React.ReactNode,
-  number: number = 3
+  number = 3
 ) => {
   return [...Array(number)].map((item, index) => (
     <Box key={index}>{Component}</Box>

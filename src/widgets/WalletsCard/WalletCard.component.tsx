@@ -1,4 +1,4 @@
-import { walletsData } from "@/dummyData/wallets.data";
+import { walletsData } from '@/dummyData/wallets.data';
 import {
   Card,
   CardBody,
@@ -7,7 +7,7 @@ import {
   Heading,
   Stack,
   Text,
-} from "@chakra-ui/react";
+} from '@chakra-ui/react';
 
 export const WalletCard = () => {
   return (

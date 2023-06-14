@@ -1,1 +1,1 @@
-export {generateDummyListComponent} from "./generateDummyListComponent.util"
+export {generateDummyListComponent} from './generateDummyListComponent.util'

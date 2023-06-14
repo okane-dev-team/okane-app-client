@@ -7,7 +7,7 @@ import { CacheProvider } from '@chakra-ui/next-js';
 import { theme } from '@/configs';
 import { Header, Loader } from '@/components';
 import '../configs/i18n.config';
-import "/node_modules/flag-icons/css/flag-icons.min.css";
+import '/node_modules/flag-icons/css/flag-icons.min.css';
 
 const queryClient = new QueryClient();
 

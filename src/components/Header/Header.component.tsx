@@ -1,5 +1,5 @@
-import { ChangeLang, Logo, Nav } from "@/components";
-import { HStack } from "@chakra-ui/react";
+import { ChangeLang, Logo, Nav } from '@/components';
+import { HStack } from '@chakra-ui/react';
 
 export const Header = (): JSX.Element => {
   return (

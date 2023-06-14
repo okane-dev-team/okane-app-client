@@ -1,2 +1,2 @@
-export { CurrencyExchangeRate } from "./CurrencyExchangeRate";
-export { WalletCard } from "./WalletsCard";
+export { CurrencyExchangeRate } from './CurrencyExchangeRate';
+export { WalletCard } from './WalletsCard';

@@ -1,5 +1,5 @@
-import Link from "next/link";
-import { Text } from "@chakra-ui/react";
+import Link from 'next/link';
+import { Text } from '@chakra-ui/react';
 
 export const Logo = (): JSX.Element => {
   return (

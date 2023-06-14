@@ -1,1 +1,1 @@
-export { walletsData } from "./wallets.data";
+export { walletsData } from './wallets.data';

@@ -1,1 +1,1 @@
-export { WalletCard } from "./WalletCard.component";
+export { WalletCard } from './WalletCard.component';

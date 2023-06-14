@@ -7,7 +7,7 @@ export const ChangeLang = (): ReactElement => {
 
   return (
     <Button onClick={onChangeLang}>
-      <span className={`fi fi-${currentLanguage === "en" ? "gb" : "ua" }`} />
+      <span className={`fi fi-${currentLanguage === 'en' ? 'gb' : 'ua'}`} />
     </Button>
   );
 };
